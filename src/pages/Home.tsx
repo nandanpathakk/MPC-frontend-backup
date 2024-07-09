@@ -20,7 +20,7 @@ export const Home = () => {
             {/* <SubHeading /> */}
             <div className="flex flex-col md:flex-row justify-between mx-4 md:mx-28 pt-20 md:pt-40 text-left">
                 <div>
-                    <div className="text-5xl md:text-7xl leading-snug pb-6 font-[barlow]">
+                    <div className="text-5xl md:text-6xl leading-snug pb-6 font-[barlow]">
                         <div>Next-gen security for</div>
                         <div>digital assets</div>
                     </div>
@@ -55,18 +55,16 @@ export const Home = () => {
             <div className="pb-24">
                 <InfoSection tag={"Just a few lines of code."} subHeading={"Estimated setup time: 9 Minutes"} description={"We make the hard things easy, so you can focus on your product. Spin up embedded wallets and beautiful authentication flows for all users. Scale your product across all devices, wallets, and browsers in minutes."} />
             </div>
-            <div className="flex flex-col md:flex-row md:justify-around items-center text-center md:text-left mb-14">
-                <div className="text-5xl md:text-6xl pb-7 font-[barlow]">
+            <div className="flex flex-col md:flex-row justify-center md:justify-around items-center text-center md:text-left my-12 px-4">
+                <div className="text-4xl md:text-5xl font-[barlow] font-semibold mb-8 md:mb-0">
                     <div>Web2 Convenience.</div>
                     <div>Web3 Guarantees.</div>
                 </div>
-                <div>
-                    <div className="text-xl w-[30rem] md:w-[40rem] pb-7 text-gray-600 font-[inter]">
-                        Privy brings web2-caliber UX — like sign in with email and social — to web3 products. Don't just increase conversion, increase the amount of potential users for your app.
-                    </div>
-                    {/* <div className="flex"><Button buttonName={"Get Started"} /></div> */}
+                <div className="max-w-md md:max-w-lg text-lg md:text-xl text-gray-600 font-[inter]">
+                    Privy brings web2-caliber UX — like sign in with email and social — to web3 products. Don't just increase conversion, increase the amount of potential users for your app.
                 </div>
             </div>
+
             <div>
                 <SlideSection />
             </div>
