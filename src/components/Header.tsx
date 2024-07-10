@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaAngleDown, FaBars, FaTimes } from "react-icons/fa";
 import { Button } from '../elements/Button';
 import { SecondaryButton } from '../elements/SecondaryButton';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -14,10 +15,13 @@ export const Header = () => {
         <header className='font-[inter]'>
             <div className="flex justify-between items-center px-6 md:px-28 py-8 text-lg">
                 <div className="flex items-center gap-6 md:gap-14">
+                    <Link to={"/"}>
                     <div className="flex items-center">
                         <span className="text-4xl md:text-5xl font-bold text-black">Ar</span>
                         <span className="text-4xl md:text-5xl font-bold text-gray-600">Key</span>
                     </div>
+                    </Link>
+                  
                     <nav className="hidden md:flex items-center gap-6">
                         <div className="flex items-center gap-1 cursor-pointer">
                             About <FaAngleDown />
@@ -30,7 +34,9 @@ export const Header = () => {
                 </div>
                 <div className="flex items-center gap-4 md:gap-14">
                     <div className='hidden md:flex'>
+                        <Link to={"/demo"}>
                         <SecondaryButton buttonName={"Demo"} />
+                        </Link>
                     </div>
                     <div className='hidden md:flex'>
                         <Button buttonName={"Dashboard"} />
@@ -50,9 +56,11 @@ export const Header = () => {
                             Features <FaAngleDown />
                         </div>
                         <div className="cursor-pointer">Docs</div>
-                        <div className="cursor-pointer">Security</div>
-                        <div className="cursor-pointer">Pricing</div>
+                        {/* <div className="cursor-pointer">Security</div> */}
+                        {/* <div className="cursor-pointer">Pricing</div> */}
+                        <Link to={"/demo"}>
                         <SecondaryButton buttonName={"Demo"} />
+                        </Link>
                         <Button buttonName={"Dashboard"} />
                     </div>
                 </div>
