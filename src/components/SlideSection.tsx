@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import controls from "../assets/controls.jpg"
-import customizable from "../assets/customizable.jpg"
-import integration from "../assets/integrations.jpg"
-import onboarding from "../assets/onboarding.jpg"
+import main from "../assets/main.png"
+import customize from "../assets/customize.png"
+import secure from "../assets/secure.png"
 
 export const SlideSection = () => {
     const [selected, setSelected] = useState(1);
@@ -11,24 +10,20 @@ export const SlideSection = () => {
         setSelected(index);
     };
 
-    const images = [onboarding, integration, customizable, controls];
+    const images = [main, customize, secure];
     const content = [
         {
-            title: "Progressive Onboarding",
-            description: "Bring the conveniences of web2 — like sign in with email and social — to web3"
+            title: "Seamless Integration for Developers",
+            description: "Empower your projects with MPC wallet capabilities, bringing the ease of web2 to web3 environments    "
         },
         {
-            title: "Out of the box integrations",
-            description: "Activate your users by plugging into account abstraction infrastructure, native onramps and other great integrations."
+            title: "Simplified Customization for Developers",
+            description: "Enhance your projects with customizable components, streamlining development for seamless integration"
         },
         {
-            title: "Customizable & delightful",
-            description: "Full customizability—so you can tailor Privy to your product and deliver an on-brand experience."
-        },
-        {
-            title: "Controls for all use cases",
-            description: "Friction where it matters – match your users’ needs with secure controls like account linking, MFA, and more."
-        }
+            title: "Next-Generation Security Solutions",
+            description: "Enhance digital asset protection with advanced security innovations, ensuring peace of mind in today's digital landscape"
+        }   
     ];
 
     return (
